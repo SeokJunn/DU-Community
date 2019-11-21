@@ -1,0 +1,5 @@
+assets/css -> public/css
+assets/js -> public/js
+assets/fonts -> public/themes/default/assets/fonts
+assets/sass -> public/sass
+/images-> public/images

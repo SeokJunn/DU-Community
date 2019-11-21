@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">
+		
+		<title>DU Community</title>
+		
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    	
+    	<style>
+        	body { padding-top:80px; 
+            background-image: linear-gradient(#FFBABB, #92F3FF);height:1000px;
+            }
+                    	
+        	body,title,h1, p, a { font-family: 'Do Hyeon', sans-serif; }
+            p{
+                 font-size:30px;
+            }
+            
+            
+    	</style>
+    
+	</head>
+	<body >
+		<div class="container" >
+		    <div class="jumbotron text-center" style="background:#FFFFFF;">
+		        <h1 style="font; color:#2DB400;">DU Community</h1>
+				<br>
+				<% if (login_success) { %>
+					<p>로그인되어 있습니다.</p>
+					<br>
+					<a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>로그아웃</a>
+                    <a href="/profile" class="btn btn-default"><span class="fa fa-user"></span>메인화면으로</a>
+				<% } else { %>
+					<p>로그인하세요.<p>
+					<p>계정이 없으시면 회원가입하세요.</p>
+					<br>
+			        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>로그인</a>
+			        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>회원가입</a>
+					<br>
+				<% } %>
+				
+		    </div>
+		
+		</div>
+	</body>
+</html>
